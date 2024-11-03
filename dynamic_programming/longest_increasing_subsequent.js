@@ -23,6 +23,6 @@ function lengthOfLIS (nums) {
     }
 
     return ans;
-};
+}
 
 console.log('answer:', lengthOfLIS([10, 22, 33, 9, 25, 30, 40, 60, 80]))

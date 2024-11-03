@@ -2,9 +2,9 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "free_practice/index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon free_practice/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
