@@ -8,6 +8,7 @@ function lengthOfLIS (nums) {
     console.log('n:', n);
 
     const dp = Array(n).fill(1)
+    console.log("dp BEFORE for loop:", dp);
 
     for (let i= 1; i < n; i++) {
         for(let j = 0; j < i; j++) {
@@ -16,9 +17,12 @@ function lengthOfLIS (nums) {
             }
         }
     }
+    console.log("dp AFTER for loop:", dp);
 
-  let ans = 0;
+
+    let ans = 0;
     for (let i= 0; i < n; i++) {
+        console.log("dp[i]:", dp[i]);
         ans = Math.max(ans, dp[i]);
     }
 
