@@ -10,8 +10,7 @@ function countCharacter(str, char) {
   // filter array --> count char in array
   let filter = arr.filter((e) => e === char);
 
-  const result = filter.length;
-  return result;
+  return filter.length;
 }
 
 console.log(countCharacter("hello", "l")); // 2
