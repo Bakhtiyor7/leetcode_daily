@@ -3,6 +3,7 @@ class Solution {
    * @param {number[]} nums
    * @return {boolean}
    */
+  // This method uses O(n^2) time and O(1) space complexity (slower)
   hasDuplicate(nums) {
     for (let i = 0; i < nums.length; i++) {
       for (let j = i + 1; j < nums.length; j++) {
@@ -21,7 +22,7 @@ const nums = [1, 2, 3, 4, 5, 1];
 const result = solution.hasDuplicate(nums);
 console.log(result); // Output: true
 
-// faster version using Set:
+// faster version using Set:  This uses 0(n) time and O(n) space complexity (faster)
 
 // class Solution {
 //     hasDuplicate(nums) {
