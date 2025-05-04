@@ -1,4 +1,11 @@
 // 🔷 O(log n) – Logarithmic Time
+
+//In Big O terms, O(log n) (pronounced “order log n”) describes algorithms whose work grows logarithmically with the input size. Here’s what that means:
+//
+//⸻
+//
+//1. Intuition: “Halving” the Problem
+//	•	Logarithms count how many times you can divide by a base (usually 2) before you get down to 1.
 //
 // 🔹 Your goal: Use binary search logic
 //

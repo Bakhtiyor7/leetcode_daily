@@ -1,4 +1,8 @@
 // 🟨 O(n) – Linear Time
+
+//1. What “Linear Time” Means
+//  	•	O(n) means the amount of work your algorithm does grows in direct proportion to the size of the input (n).
+//  	•	If you double n, you roughly double the work; triple n, triple the work.
 //
 // 🔹 Your goal: Loop over all elements once.
 //
