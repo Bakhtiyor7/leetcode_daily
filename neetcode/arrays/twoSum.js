@@ -5,13 +5,6 @@ class Solution {
    * @return {number[]}
    */
   twoSum(nums, target) {
-    // if the integer equals the target finish the job directly
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] === target) {
-        return [i];
-      }
-    }
-
     // nested loop
     for (let i = 0; i < nums.length; i++) {
       for (let j = i + 1; j < nums.length + 1; j++) {
