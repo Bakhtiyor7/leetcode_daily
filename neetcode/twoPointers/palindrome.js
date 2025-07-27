@@ -34,14 +34,12 @@
 // 	}
 // }
 
-// 2. Two pointer approach O(n) time, O(1) space = better approach 
+// 2. Two pointer approach O(n) time, O(1) space = better approach
 class Solution {
 	isPalindrome(s) {
 		// add two pointers
 		let l = 0,
 			r = s.length - 1;
-		console.log("s:", l);
-		console.log("r:", r);
 
 		while (l < r) {
 			while (l < r && !this.isAlphanum(s[l])) {
