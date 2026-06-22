@@ -1,29 +1,28 @@
 class Solution {
-    /**
-     * @param {number[]} nums
-     * @param {number} k
-     * @return {number[]}
-     */
-    topKFrequent(nums, k) {
-        let seen = {}
-        
-        let result = [];
+  /**
+   * @param {number[]} nums
+   * @param {number} k
+   * @return {number[]}
+   */
+  topKFrequent(nums, k) {
+    let counts = {};
 
-        for (let i = 0; i < nums.length; i++) {
-            let num = nums[i]
-            if(nums[num] >= k) {
-                result.push(num);
-                }
-            
-        
-           seen[num] = (seen[num] || 0) + 1;
-
+    if (nums.length === 0) {
+      return [];
     }
-    console.log(seen)
-        return result;
-    
-}}
 
-const solution = new Solution;
+    for (const num of nums) {
+      counts[num] = counts[num] ? counts[num] + 1 : 1;
+    }
 
-console.log(solution.topKFrequent([1, 1, 2, 2, 3], 2));
+    let result = Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, k)
+      .map(([num]) => Number(num));
+
+    return result;
+  }
+}
+
+const solution = new Solution();
+console.log(solution.topKFrequent([1, 2, 2, 3, 3, 3], 2));
